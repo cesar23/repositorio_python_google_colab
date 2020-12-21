@@ -1,0 +1,40 @@
+#----ides config
+.env
+.idea
+.history
+.vs
+
+#-------laravel
+/vendor/*
+*/vendor/*
+**/vendor/*
+*vendor/*
+/vendor
+/log/*
+
+
+#--------- python
+venv**
+.venv**
+venv_v2
+*venv_v*
+
+
+#--------node
+/node_modules
+/*/node_modules
+/*/*/node_modules
+/*/*/*/node_modules
+/*/*/*/*/node_modules
+*node_modules
+
+
+
+
+# Ignora los ficheros *.o y *.a *.zip
+*.iso
+#*.[ao]
+#*.zip
+#*.rar
+
+
