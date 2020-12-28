@@ -57,3 +57,20 @@ def humanbytes(B):
         return '{0:.2f} GB'.format(B/GB)
     elif TB <= B:
         return '{0:.2f} TB'.format(B/TB)
+
+def DateHourLima():
+    import pytz, datetime
+    local = pytz.timezone ("America/Lima")
+    # fecha  y  hora Hora  Utc
+    #naive = datetime.datetime.strptime ("2001-2-3 10:11:12", "%Y-%m-%d %H:%M:%S")
+    # fecha  y  hora Hora
+    naive = datetime.datetime.now()
+
+    local_dt = local.localize(naive, is_dst=None)
+    utc_dt = local_dt.astimezone(pytz.utc)
+    # print(local_dt)
+    # print(utc_dt)
+    # print('---formateado -----')
+    # print(local_dt.strftime("%Y-%m-%d %H:%M:%S"))
+    # print(utc_dt.strftime("%Y-%m-%d %H:%M:%S"))
+    return local_dt.strftime("%Y-%m-%d %H:%M:%S")
