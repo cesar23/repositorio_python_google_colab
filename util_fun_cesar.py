@@ -65,7 +65,6 @@ def DateHourLima():
     #naive = datetime.datetime.strptime ("2001-2-3 10:11:12", "%Y-%m-%d %H:%M:%S")
     # fecha  y  hora Hora
     naive = datetime.datetime.now()
-
     local_dt = local.localize(naive, is_dst=None)
     utc_dt = local_dt.astimezone(pytz.utc)
     # print(local_dt)
